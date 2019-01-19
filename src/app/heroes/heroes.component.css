@@ -11,7 +11,7 @@ ul.heroes{
     display: inline-block;
 }
 
-li{
+li, .name{
     cursor: pointer;
     position: relative;
     left: 0;
@@ -23,11 +23,28 @@ li{
     text-align: left;
 
 }
+.name{
+    width: 5em;
+    text-align: center;
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    padding: .3em .3em;
+
+}
 
 li:hover{
     background-color: gray;
     left: -0.5em;
 }
+
+.selected{
+    background-color: #CFD8DC !important;
+    color: white;
+}
+.heroes li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
 
 .badge{
 
@@ -44,3 +61,19 @@ li:hover{
     border-radius: 4px 0 0 4px;
     
 }
+.label{
+    font-size: small;
+    color: white;
+    background-color: #607D8B;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    display: inline-block;
+    position: relative;
+    height: 1.5em;
+    margin-right: .8em;
+    border-radius: 4px 4px 4px 4px;
+    vertical-align: middle;
+
+}
+
+
+
